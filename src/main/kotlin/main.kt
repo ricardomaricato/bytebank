@@ -10,6 +10,6 @@ fun main() {
     println("nome ${alex.nome}")
     println("cpf ${alex.cpf}")
     println("salário ${alex.salario}")
-    println("bonificação ${alex.bonificacao()}")
+    println("bonificação ${alex.bonificacao}")
 }
 

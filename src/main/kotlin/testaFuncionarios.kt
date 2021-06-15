@@ -1,9 +1,8 @@
 fun testaFuncionarios() {
-    val alex = Gerente(
+    val alex = Analista(
         nome = "Alex",
         cpf = "111.111.111-11",
-        salario = 1000.0,
-        senha = 456
+        salario = 1000.0
     )
 
     println("nome ${alex.nome}")
@@ -43,23 +42,23 @@ fun testaFuncionarios() {
     println("bonificação ${gui.bonificacao}")
     println("plr ${gui.plr}")
 
-//    if (gui.autentica(4000)) {
-//        println("autenticou com sucesso")
-//    } else {
-//        println("falha na autenticação")
-//    }
-//
-//    val maria = Analista(
-//        nome = "Maria",
-//        cpf = "444.444.444-44",
-//        salario = 3000.0
-//    )
+    if (gui.autentica(4000)) {
+        println("autenticou com sucesso")
+    } else {
+        println("falha na autenticação")
+    }
+
+    val maria = Analista(
+        nome = "Maria",
+        cpf = "444.444.444-44",
+        salario = 3000.0
+    )
 
     val calculadora = CalculadoraBonificacao()
     calculadora.registra(alex)
     calculadora.registra(fran)
     calculadora.registra(gui)
-//    calculadora.registra(maria)
+    calculadora.registra(maria)
 
     println("total de bonificação: ${calculadora.total}")
 }
